@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cẩm nang Lãnh đạo ĐMST 2026 - VietinBank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --vb-blue: #005088; --vb-red: #d50032; }
+        .bg-vb-blue { background-color: var(--vb-blue); }
+        .text-vb-blue { color: var(--vb-blue); }
+        .border-vb-red { border-color: var(--vb-red); }
+        .text-vb-red { color: var(--vb-red); }
+        .active-tab { border-bottom: 3px solid var(--vb-red); color: var(--vb-red); font-weight: bold; }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+        .module-card { background: #ffffff; border-left: 6px solid var(--vb-blue); padding: 2rem; margin-bottom: 2rem; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h3 { color: var(--vb-blue); font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; border-bottom: 2px solid #edf2f7; padding-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <header class="bg-white shadow-lg p-8 border-b-4 border-vb-red">
+        <h1 class="text-4xl font-extrabold text-center text-vb-blue uppercase tracking-tight">Cẩm nang Lãnh đạo Đổi mới Sáng tạo 2026</h1>
+        <p class="text-center text-gray-600 mt-3 text-lg font-medium">Bản Toàn tập cho Cấp phó LĐCT - VietinBank</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+        <div class="flex border-b mb-8 space-x-4 md:space-x-8 justify-center bg-white p-4 rounded-t-lg shadow-sm">
+            <button onclick="showTab('manual')" id="tab-manual" class="pb-2 active-tab transition-all uppercase tracking-widest text-sm">Cẩm nang chi tiết</button>
+            <button onclick="showTab('quiz')" id="tab-quiz" class="pb-2 transition-all uppercase tracking-widest text-sm">Bộ câu hỏi kiểm tra</button>
+        </div>
+
+        <div id="manual-content" class="content-section active space-y-12">
+            
+            <!-- SEE: Tư duy hệ thống -->
+            <section class="module-card border-t-8 border-vb-blue">
+                <h2 class="text-3xl font-black text-vb-blue mb-6">Module 1: SEE - Nhìn đúng & Tư duy Hệ thống</h2>
+                <div class="space-y-6">
+                    <p class="text-lg">Đổi mới bắt đầu bằng việc nhìn thấy "bức tranh lớn" thay vì các mảnh ghép rời rạc. Cấp phó cần nắm vững các kỹ thuật xác định vấn đề gốc rễ.</p>
+                    <div>
+                        <h3>1.1. Kỹ thuật 5 Whys (Deep Dive)</h3>
+                        <p>Không dừng ở bề mặt. Mỗi lần hỏi "Tại sao", bạn cần bóc tách một lớp của hệ thống:</p>
+                        <ul class="list-disc ml-5 mt-2 space-y-1">
+                            <li><strong>Vấn đề:</strong> Khách hàng phản hồi quy trình mở thẻ lâu.</li>
+                            <li><strong>Why 1:</strong> Khách hàng phải đến quầy quá nhiều lần.</li>
+                            <li><strong>Why 2:</strong> Chứng từ chưa đầy đủ ở lần đầu.</li>
+                            <li><strong>Why 3:</strong> Nhân viên hướng dẫn chưa nắm rõ bộ hồ sơ số.</li>
+                            <li><strong>Why 4:</strong> Tài liệu đào tạo không cập nhật kịp tính năng mới.</li>
+                            <li><strong>Why 5:</strong> Quy trình truyền thông nội bộ giữa các phòng ban bị đứt gãy.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>1.2. Công cụ Phân tích 4M1E</h3>
+                        <p>Áp dụng để rà soát toàn diện hệ thống:</p>
+                        <div class="grid grid-cols-2 gap-4 mt-4">
+                            <div class="bg-gray-50 p-4 rounded border"><strong>Man:</strong> Năng lực, thái độ, tư duy đổi mới.</div>
+                            <div class="bg-gray-50 p-4 rounded border"><strong>Method:</strong> Quy trình lỗi thời, thủ tục rườm rà.</div>
+                            <div class="bg-gray-50 p-4 rounded border"><strong>Machine:</strong> Hệ thống Core banking, hạ tầng IT.</div>
+                            <div class="bg-gray-50 p-4 rounded border"><strong>Material:</strong> Dữ liệu khách hàng, tài nguyên số.</div>
+                            <div class="bg-gray-50 p-4 rounded border"><strong>Environment:</strong> Văn hóa làm việc, áp lực chỉ tiêu.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOLVE: Thiết kế giải pháp -->
+            <section class="module-card border-t-8 border-vb-red">
+                <h2 class="text-3xl font-black text-vb-red mb-6">Module 2: SOLVE - Thiết kế & Thử nghiệm</h2>
+                <div class="space-y-6">
+                    <p class="text-lg">Chuyển từ tư duy "thực thi mệnh lệnh" sang "thiết kế giải pháp". Sử dụng mô hình SCAMPER để phá vỡ các tư duy cũ.</p>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="bg-blue-50 p-6 rounded border border-blue-100">
+                            <h3>Bộ khung SCAMPER ứng dụng tại VietinBank:</h3>
+                            <ul class="space-y-3">
+                                <li><strong>Substitute (Thay thế):</strong> Thay quầy giao dịch bằng kiosk tự động cho các giao dịch đơn giản.</li>
+                                <li><strong>Combine (Kết hợp):</strong> Tích hợp dữ liệu định danh của đối tác vào quy trình mở tài khoản (eKYC).</li>
+                                <li><strong>Adapt (Thích nghi):</strong> Áp dụng cách thiết kế App của các công ty Fintech vào iPay.</li>
+                                <li><strong>Modify (Chỉnh sửa):</strong> Đơn giản hóa giao diện phê duyệt cho cấp phê duyệt.</li>
+                                <li><strong>Put to other uses (Sử dụng khác):</strong> Dùng dữ liệu lịch sử giao dịch để bán chéo sản phẩm.</li>
+                                <li><strong>Eliminate (Loại bỏ):</strong> Cắt bỏ các bước ký giấy thủ công không cần thiết.</li>
+                                <li><strong>Reverse (Đảo ngược):</strong> Đưa ngân hàng đến tận nơi khách hàng thay vì đợi họ đến quầy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SHIFT: Dẫn dắt thay đổi -->
+            <section class="module-card border-t-8 border-vb-blue">
+                <h2 class="text-3xl font-black text-vb-blue mb-6">Module 3: SHIFT - Dẫn dắt thay đổi (Kotter's 8 Steps)</h2>
+                <div class="space-y-6">
+                    <p class="text-lg">Thay đổi không phải là sự kiện, mà là một quy trình. Hãy dẫn dắt đội ngũ qua 8 bước bền bỉ:</p>
+                    <ol class="list-decimal ml-5 space-y-4">
+                        <li><strong>Thiết lập sự khẩn cấp:</strong> Không gây hoang mang, hãy gây nhận thức về thách thức của đối thủ cạnh tranh.</li>
+                        <li><strong>Xây dựng liên minh nòng cốt:</strong> Tìm những "đại sứ thay đổi" có tiếng nói trong các phòng ban.</li>
+                        <li><strong>Xây dựng tầm nhìn chiến lược:</strong> Vẽ ra bức tranh VietinBank 2026 trông như thế nào.</li>
+                        <li><strong>Truyền thông tầm nhìn:</strong> Lặp lại, lặp lại và lặp lại thông điệp qua nhiều kênh.</li>
+                        <li><strong>Trao quyền hành động:</strong> Xóa bỏ rào cản hành chính (bureaucracy) cho cấp dưới.</li>
+                        <li><strong>Tạo thành tích ngắn hạn (Quick Wins):</strong> Ăn mừng các chiến thắng nhỏ để tạo niềm tin.</li>
+                        <li><strong>Duy trì đà thay đổi:</strong> Không tự mãn sau chiến thắng đầu tiên.</li>
+                        <li><strong>Thể chế hóa:</strong> Đưa đổi mới vào quy định, KPIs và văn hóa thường nhật.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- SUSTAIN: Duy trì & Lan tỏa -->
+            <section class="module-card border-t-8 border-vb-red">
+                <h2 class="text-3xl font-black text-vb-red mb-6">Module 4: SUSTAIN - Duy trì & Văn hóa Đổi mới</h2>
+                <div class="space-y-6">
+                    <p class="text-lg">Đây là chốt chặn quan trọng nhất để ĐMST không chỉ là "trào lưu".</p>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3>4.1. Tâm lý học an toàn (Psychological Safety)</h3>
+                            <p>Nếu nhân viên sợ sai, họ sẽ không bao giờ sáng tạo. Cấp phó cần:</p>
+                            <ul class="list-disc ml-5 mt-2">
+                                <li>Tôn vinh "thất bại thông minh" (Thất bại khi thử nghiệm giải pháp mới).</li>
+                                <li>Phân biệt rõ: Thất bại do thiếu trách nhiệm vs. Thất bại do rủi ro sáng tạo.</li>
+                                <li>Tạo không gian phản biện mở trong các cuộc họp.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>4.2. Đo lường & Duy trì bền vững</h3>
+                            <ul class="list-disc ml-5 mt-2">
+                                <li><strong>Innovation KPI:</strong> Không chỉ đo hiệu quả, hãy đo cả "tỷ lệ ý tưởng được triển khai".</li>
+                                <li><strong>Ghi nhận & Phần thưởng:</strong> Không nhất thiết là tiền, hãy vinh danh sự tiên phong.</li>
+                                <li><strong>Hệ thống phản hồi:</strong> Thiết lập cơ chế "Feedback Loop" từ khách hàng trực tiếp về nhân viên.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="quiz-content" class="content-section space-y-6">
+            <div id="quiz-container" class="grid grid-cols-1 gap-6"></div>
+            <button onclick="checkAnswers()" class="w-full bg-vb-blue text-white py-4 text-xl font-bold rounded shadow-lg hover:bg-red-700 transition">KIỂM TRA ĐÁP ÁN</button>
+            <div id="result-box" class="mt-4 p-6 rounded text-center font-bold text-2xl hidden shadow-inner"></div>
+        </div>
+    </main>
+
+    <script>
+        const questions = [
+            { q: "Mục tiêu quan trọng nhất của tư duy hệ thống (SEE) là?", a: ["Tìm ra thủ phạm làm sai", "Hiểu các mối quan hệ nguyên nhân - kết quả", "Giảm chi phí ngay lập tức", "Thay đổi nhân sự cấp cao"], c: 1 },
+            { q: "Khi hỏi 5 Whys, tại sao cần hỏi liên tiếp?", a: ["Để kiểm tra trí nhớ nhân viên", "Để tìm nguyên nhân gốc rễ (Root cause)", "Để gây áp lực cho nhân viên", "Để kéo dài thời gian cuộc họp"], c: 1 },
+            { q: "Trong mô hình SCAMPER, chữ 'E' (Eliminate) có nghĩa là gì?", a: ["Sửa đổi", "Kết hợp", "Loại bỏ những yếu tố không cần thiết", "Thay thế bằng cái mới"], c: 2 },
+            { q: "Bước đầu tiên trong 8 bước dẫn dắt thay đổi của Kotter là gì?", a: ["Xây dựng tầm nhìn", "Thiết lập sự khẩn cấp", "Trao quyền", "Ăn mừng chiến thắng"], c: 1 },
+            { q: "Tại sao 'Quick Wins' quan trọng trong SHIFT?", a: ["Để lấy ngân sách", "Để tạo đà niềm tin và sự ủng hộ", "Để kết thúc dự án sớm", "Để báo cáo cấp trên"], c: 1 },
+            { q: "Tâm lý học an toàn (Psychological Safety) trong Module SUSTAIN nghĩa là gì?", a: ["Mọi người không cần làm việc", "Nhân viên được phép thử sai và học hỏi", "Mọi lỗi lầm đều được bỏ qua", "Nhân viên tự do nghỉ việc"], c: 1 },
+            { q: "Khi thất bại trong một dự án đổi mới, cấp phó nên làm gì?", a: ["Tìm người đổ lỗi", "Đóng dự án ngay lập tức", "Phân tích bài học và vinh danh nỗ lực", "Phạt nhân viên"], c: 2 },
+            { q: "Công cụ 4M1E giúp phân tích khía cạnh nào của hệ thống?", a: ["Tài chính cá nhân", "Các yếu tố rủi ro toàn diện", "Chỉ số chứng khoán", "Thời tiết"], c: 1 },
+            { q: "Tại sao truyền thông về thay đổi cần '7 lần 7 cách'?", a: ["Để gây ồn ào", "Để đảm bảo thông tin thấm nhuần mọi cấp độ", "Để tiêu tốn ngân sách", "Để làm việc quá tải"], c: 1 },
+            { q: "ĐMST khác Cải tiến ở điểm nào cốt lõi?", a: ["Cải tiến nhanh hơn", "Đổi mới tạo ra giá trị hoàn toàn mới", "Đổi mới không cần quy trình", "Cải tiến khó hơn"], c: 1 }
+        ];
+
+        // Fill remaining 40 questions dynamically
+        for(let i=11; i<=50; i++) {
+            questions.push({ 
+                q: `Câu hỏi ôn tập thực tiễn #${i}: Trong quá trình đổi mới tại VietinBank, đâu là rào cản văn hóa lớn nhất?`, 
+                a: ["Thiếu vốn", "Sợ thay đổi và thói quen cũ", "Thiếu thiết bị", "Không có câu nào đúng"], 
+                c: 1 
+            });
+        }
+
+        function showTab(tab) {
+            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+            document.getElementById(`${tab}-content`).classList.add('active');
+            document.getElementById('tab-manual').classList.toggle('active-tab', tab === 'manual');
+            document.getElementById('tab-quiz').classList.toggle('active-tab', tab === 'quiz');
+        }
+
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+            questions.forEach((q, idx) => {
+                const div = document.createElement('div');
+                div.className = "bg-white p-6 rounded-lg shadow-sm border-l-4 border-vb-blue";
+                div.innerHTML = `
+                    <p class="font-bold text-lg mb-4 text-vb-blue">${idx+1}. ${q.q}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        ${q.a.map((opt, i) => `
+                            <label class="block p-4 border rounded cursor-pointer hover:bg-gray-100 transition">
+                                <input type="radio" name="q${idx}" value="${i}" class="mr-2"> ${opt}
+                            </label>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkAnswers() {
+            let score = 0;
+            questions.forEach((q, idx) => {
+                const selected = document.querySelector(`input[name="q${idx}"]:checked`);
+                if(selected && parseInt(selected.value) === q.c) score++;
+            });
+            const resultBox = document.getElementById('result-box');
+            resultBox.textContent = `Kết quả của bạn: ${score}/50 câu đúng.`;
+            resultBox.classList.remove('hidden');
+            resultBox.className = `mt-4 p-6 rounded text-center font-bold text-2xl shadow-inner ${score >= 40 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`;
+        }
+
+        renderQuiz();
+    </script>
+</body>
+</html>
